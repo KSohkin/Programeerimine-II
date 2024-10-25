@@ -1,4 +1,4 @@
-﻿@model IEnumerable<KooliProjekt.Data.Event>
+﻿@model PagedResult<KooliProjekt.Data.Event>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,37 +13,37 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Date)
+                Date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Time)
+                Time
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Desscription)
+                Desscription
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Spots)
+                Spots
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Eventplan)
+                Eventplan
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Summary)
+                Summary
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Oraganizer)
+                Oraganizer
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Results) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
@@ -81,3 +81,4 @@
 }
     </tbody>
 </table>
+@(await Component.InvokeAsync<PagerViewComponent>(Model))
