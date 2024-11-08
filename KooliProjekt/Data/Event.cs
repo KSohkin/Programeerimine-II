@@ -7,42 +7,42 @@ namespace KooliProjekt.Data
         
         [Required]
         [StringLength(100)]
-        public String ID { get; set; }
+        public required String ID { get; set; }
         
         [Required]
-        public String Name { get; set; }
+        public required String Name { get; set; }
         
         [Required]
-        public DateOnly Date { get; set; }
+        public required DateOnly Date { get; set; }
         
         [Required]
-        public DateTime Time { get; set; }
+        public required DateTime Time { get; set; }
         
         [Required]
         [StringLength(255)]
-        public String Desscription { get; set; }
+        public required String Desscription { get; set; }
         
         [Required]
-        public String Spots { get; set; }
+        public required String Spots { get; set; }
 
         
         [Required]
         [StringLength(255)]
-        public String Eventplan { get; set; }
+        public required String Eventplan { get; set; }
 
         
         [Required]
-        public String Price { get; set; }
+        public required String Price { get; set; }
 
         
         [Required]
         [StringLength(600)]
-        public String Summary { get; set; }
+        public required String Summary { get; set; }
 
         
         [Required]
         [StringLength(255)]
-        public String Oraganizer { get; set; }
+        public required String Oraganizer { get; set; }
 
     }
 }

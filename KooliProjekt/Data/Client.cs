@@ -6,17 +6,17 @@ namespace KooliProjekt.Data
     {
         
         [Required]
-        public String ID { get; set; }
+        public required String ID { get; set; }
         [Required]
         [StringLength(100)]
-        public String First_name { get; set; }
+        public required String First_name { get; set; }
         [Required]
         [StringLength(100)]
-        public String Last_name { get; set; }
-        public String Phone_number { get; set; }
+        public required String Last_name { get; set; }
+        public required String Phone_number { get; set; }
         
         [Required]
         [StringLength(100)]
-        public String Email { get; set; }
+        public required String Email { get; set; }
     }
 }

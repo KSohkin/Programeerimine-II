@@ -6,20 +6,20 @@ namespace KooliProjekt.Data
     {
         
         [Required]
-        public String ID { get; set; }
+        public required String ID { get; set; }
         [Required]
-        public String Amount { get; set; }
+        public required String Amount { get; set; }
 
         
         [Required]
-        public String PaymentNr { get; set; }
+        public required String PaymentNr { get; set; }
         
         [Required]
-        public String Deadline { get; set; }
+        public required String Deadline { get; set; }
 
         [Required]
         [StringLength(255)]
-        public String Description { get; set; }
+        public required String Description { get; set; }
 
     }
 }
