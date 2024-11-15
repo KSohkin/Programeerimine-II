@@ -43,7 +43,14 @@
         new Event { ID = "101", Name = "WinterFest", Time = new DateTime(2024, 11, 25, 9, 0, 0), Description = "Winter Stuff", Spots = "1000", Eventplan = "idk", Price = "20m", Summary = "WIHWWRF", Organizer = "SM Co", },
         new Event { ID = "102", Name = "New Year Festival", Time = new DateTime(2024, 12, 5, 9, 0, 0), Description = "Fireworks and stuff", Spots = "5000", Eventplan = "idk", Price = "50m", Summary = "WIHWWRF", Organizer = "WT Co.", },
         new Event { ID = "103", Name = "Indepentence drinking festival", Time = new DateTime(2025, 2, 15, 9, 0, 0), Description = "Drinking to celebrate indepentence", Spots = "500", Eventplan = "idk", Price = "10m", Summary = "WIHWWRF", Organizer = "WHO Co.", },
-        new Event { ID = "104", Name = "Early summer Festival", Time = new DateTime(2025, 4, 17, 9, 0, 0), Description = "Drinking and stuff", Spots = "250", Eventplan = "idk", Price = "5m", Summary = "WIHWWRF", Organizer = "NF Co.", }
+        new Event { ID = "104", Name = "Early summer Festival", Time = new DateTime(2025, 4, 17, 9, 0, 0), Description = "Drinking and stuff", Spots = "250", Eventplan = "idk", Price = "5m", Summary = "WIHWWRF", Organizer = "NF Co.", },
+        new Event { ID = "105", Name = "Spring Carnival", Time = new DateTime(2025, 3, 21, 10, 0, 0), Description = "Carnival rides, games, and fun for all ages", Spots = "3000", Eventplan = "idk", Price = "15m", Summary = "WIHWWRF", Organizer = "ABC Co.", },
+        new Event { ID = "106", Name = "Halloween Bash", Time = new DateTime(2024, 10, 31, 18, 0, 0), Description = "Costume party with music, dancing, and tricks", Spots = "2000", Eventplan = "idk", Price = "30m", Summary = "WIHWWRF", Organizer = "GH Co.", },
+        new Event { ID = "107", Name = "Summer Solstice Celebration", Time = new DateTime(2025, 6, 21, 12, 0, 0), Description = "Celebrating the longest day of the year", Spots = "1500", Eventplan = "idk", Price = "25m", Summary = "WIHWWRF", Organizer = "TLM Co.", },
+        new Event { ID = "108", Name = "Autumn Harvest Festival", Time = new DateTime(2024, 9, 25, 9, 0, 0), Description = "Harvest-themed event with food, music, and dancing", Spots = "1000", Eventplan = "idk", Price = "12m", Summary = "WIHWWRF", Organizer = "HGP Co.", },
+        new Event { ID = "109", Name = "Valentine's Day Gala", Time = new DateTime(2025, 2, 14, 18, 0, 0), Description = "A romantic evening with dinner, dancing, and music", Spots = "600", Eventplan = "idk", Price = "35m", Summary = "WIHWWRF", Organizer = "VCO Co.", },
+        new Event { ID = "110", Name = "Music and Arts Festival", Time = new DateTime(2025, 7, 10, 11, 0, 0), Description = "Live music, art displays, and creative workshops", Spots = "4000", Eventplan = "idk", Price = "45m", Summary = "WIHWWRF", Organizer = "CREO Co.", }
+
     };
 
             context.Event.AddRange(events);
@@ -63,7 +70,14 @@
         new Organizer { ID = "42", Name = "SM Co", Description = "Idk", },
         new Organizer { ID = "12", Name = "WT Co", Description = "Idk", },
         new Organizer { ID = "63", Name = "NF CO", Description = "Idk", },
-        new Organizer { ID = "16", Name = "WHO Co", Description = "Idk", }
+        new Organizer { ID = "16", Name = "WHO Co", Description = "Idk", },
+        new Organizer { ID = "24", Name = "ABC Co", Description = "Leading in event planning and entertainment.", },
+        new Organizer { ID = "55", Name = "GH Co", Description = "Specializing in large-scale festivals and gatherings.", },
+        new Organizer { ID = "38", Name = "TLM Co", Description = "Experts in creating vibrant and memorable celebrations.", },
+        new Organizer { ID = "77", Name = "HGP Co", Description = "Focused on cultural events and community engagement.", },
+        new Organizer { ID = "89", Name = "VCO Co", Description = "Creating magical experiences for couples and romantic events.", },
+        new Organizer { ID = "101", Name = "CREO Co", Description = "Passionate about music, arts, and creative workshops.", }
+
     };
 
                 context.Organizer.AddRange(organizers);
