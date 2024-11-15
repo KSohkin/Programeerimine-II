@@ -22,6 +22,21 @@ namespace KooliProjekt
 
             var app = builder.Build();
 
+#if DEBUG
+            using (var scope = app.Services.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+                // Rakendame kõik migratsioonid, et andmebaas oleks ajakohane
+                context.Database.Migrate();  // Rakendab kõik migratsioonid, kui neid pole veel rakendatud
+
+                // Täiendame andmebaasi, kui see on tühi
+                SeedData.GenerateClients(context);
+                SeedData.GenerateEvents(context);
+                SeedData.GenerateOrganizers(context);
+            }
+#endif
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
