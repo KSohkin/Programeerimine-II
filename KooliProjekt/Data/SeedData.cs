@@ -67,10 +67,10 @@
 
                var organizers = new List<Organizer>
  {
-        new Organizer { ID = "42", Name = "SM Co", Description = "Idk", },
-        new Organizer { ID = "12", Name = "WT Co", Description = "Idk", },
-        new Organizer { ID = "63", Name = "NF CO", Description = "Idk", },
-        new Organizer { ID = "16", Name = "WHO Co", Description = "Idk", },
+        new Organizer { ID = "42", Name = "SM Co", Description = "Specializes in winter festivals and seasonal events. Known for large-scale outdoor gatherings and winter-themed activities.", },
+        new Organizer { ID = "12", Name = "WT Co", Description = "Experts in fireworks displays and New Year's Eve celebrations. They also organize large public festivals and citywide events.", },
+        new Organizer { ID = "63", Name = "NF Co", Description = "Known for organizing summer festivals and family-friendly outdoor events. They focus on community participation and entertainment.", },
+        new Organizer { ID = "16", Name = "WHO Co", Description = "Specializes in heritage and cultural events. Famous for their Independence Day celebrations and large drinking festivals.", },
         new Organizer { ID = "24", Name = "ABC Co", Description = "Leading in event planning and entertainment.", },
         new Organizer { ID = "55", Name = "GH Co", Description = "Specializing in large-scale festivals and gatherings.", },
         new Organizer { ID = "38", Name = "TLM Co", Description = "Experts in creating vibrant and memorable celebrations.", },
