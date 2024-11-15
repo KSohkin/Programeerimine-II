@@ -16,9 +16,6 @@
                 Name
             </th>
             <th>
-                Date
-            </th>
-            <th>
                 Time
             </th>
             <th>
@@ -49,13 +46,10 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Time)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Desscription)
+                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Spots)
@@ -70,7 +64,7 @@
                 @Html.DisplayFor(modelItem => item.Summary)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Oraganizer)
+                @Html.DisplayFor(modelItem => item.Organizer)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

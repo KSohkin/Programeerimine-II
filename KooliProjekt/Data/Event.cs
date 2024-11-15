@@ -13,14 +13,11 @@ namespace KooliProjekt.Data
         public required String Name { get; set; }
         
         [Required]
-        public required DateOnly Date { get; set; }
-        
-        [Required]
         public required DateTime Time { get; set; }
         
         [Required]
         [StringLength(255)]
-        public required String Desscription { get; set; }
+        public required String Description { get; set; }
         
         [Required]
         public required String Spots { get; set; }
@@ -42,7 +39,7 @@ namespace KooliProjekt.Data
         
         [Required]
         [StringLength(255)]
-        public required String Oraganizer { get; set; }
+        public required String Organizer { get; set; }
 
     }
 }
