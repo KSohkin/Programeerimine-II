@@ -6,19 +6,19 @@ namespace KooliProjekt.Data
     {
         
         [Required]
-        public required String ID { get; set; }
+        public required string ID { get; set; }
 
         
         [Required]
-        public required String Client_ID { get; set; }
+        public required string Client_ID { get; set; }
 
         
         [Required]
-        public required String Payment_ID { get; set; }
+        public required string Payment_ID { get; set; }
         public DateTime Date { get; set; }
         
         [Required]
-        public required String Event_ID { get; set; }
+        public required string Event_ID { get; set; }
 
     }
 }
